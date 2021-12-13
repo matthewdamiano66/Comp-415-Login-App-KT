@@ -11,36 +11,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login!"
+        android:textColor="#ff0000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.565" />
+        app:layout_constraintVertical_bias="0.499"
+        app:rippleColor="#8A2BE2" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="132dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password" />
+        android:textColorHint="#F30202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="87dp"
-        android:layout_marginTop="206dp"
+        android:layout_marginTop="212dp"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColorHint="#FF0A0A"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
